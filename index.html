@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title id="page-title"
+       data-en="El Noh — Atmospheric Science"
+       data-ko="노엘 — 대기과학">El Noh — Atmospheric Science</title>
+
+<meta name="description"
+      data-en="El Noh, postdoctoral researcher in atmospheric science at Kongju National University. Rossby wave dynamics, heatwaves, marine heatwaves and atmospheric energetics."
+      data-ko="공주대학교 대기과학과 박사후연구원 노엘. 로스비파 역학, 폭염, 해양열파, 대기 에너지 순환 연구."
+      content="El Noh, postdoctoral researcher in atmospheric science at Kongju National University. Rossby wave dynamics, heatwaves, marine heatwaves and atmospheric energetics.">
+<meta name="author" content="El Noh">
+
+<!-- Open Graph: 링크를 공유했을 때 보이는 미리보기 -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="El Noh — Atmospheric Science">
+<meta property="og:description" content="Rossby wave dynamics, heatwaves, marine heatwaves and atmospheric energetics.">
+<meta property="og:url" content="https://noel-dyn.github.io/">
+<!-- 사진을 올린 뒤 아래 주석을 풀면 링크 공유 시 미리보기 이미지가 나옵니다
+<meta property="og:image" content="https://noel-dyn.github.io/images/profile.jpg"> -->
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://noel-dyn.github.io/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- 화면 깜빡임(FOUC) 방지: 저장된 테마·언어를 렌더링 전에 적용 -->
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem("theme");
+    if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
+    var l = localStorage.getItem("lang");
+    if (l === "ko" || l === "en") {
+      document.documentElement.setAttribute("data-lang", l);
+      document.documentElement.setAttribute("lang", l);
+    }
+  } catch (e) {}
+})();
+</script>
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ======================================================================
+     HEADER
+     ====================================================================== -->
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top">El&nbsp;Noh</a>
+
+    <nav class="nav" aria-label="Section navigation">
+      <a href="#about"><span class="lang-en">About</span><span class="lang-ko">소개</span></a>
+      <a href="#research"><span class="lang-en">Research</span><span class="lang-ko">연구</span></a>
+      <a href="#publications"><span class="lang-en">Publications</span><span class="lang-ko">논문</span></a>
+      <a href="#talks"><span class="lang-en">Talks</span><span class="lang-ko">학회발표</span></a>
+      <a href="#cv"><span class="lang-en">CV</span><span class="lang-ko">이력</span></a>
+      <a href="#contact"><span class="lang-en">Contact</span><span class="lang-ko">연락처</span></a>
+    </nav>
+
+    <div class="header-tools">
+      <button class="icon-btn" id="lang-toggle" type="button" aria-label="한국어로 보기">한국어</button>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.5"/>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ======================================================================
+     HERO / ABOUT
+     ====================================================================== -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+
+    <!-- ┌─────────────────────────────────────────────────────────────┐
+         │  프로필 사진 자리                                            │
+         │  사진을 찍으시면 images/profile.jpg 로 저장한 뒤,             │
+         │  아래 <img> 의 src 를 "images/profile.jpg" 로 바꾸고         │
+         │  그 아래 <p class="photo-caption"> 줄은 지우면 됩니다.        │
+         └─────────────────────────────────────────────────────────────┘ -->
+    <div>
+      <div class="photo-frame">
+        <img src="images/profile-placeholder.svg" alt="Portrait of El Noh">
+      </div>
+      <p class="photo-caption">
+        <span class="lang-en">Photo coming soon</span>
+        <span class="lang-ko">사진 준비 중</span>
+      </p>
+    </div>
+
+    <div id="about">
+      <h1 class="hero-name">El Noh<span class="name-ko lang-ko">노엘</span></h1>
+
+      <p class="hero-role">
+        <span class="lang-en">Postdoctoral Researcher, Department of Atmospheric Science</span>
+        <span class="lang-ko">대기과학과 박사후연구원</span>
+      </p>
+      <p class="hero-affil">
+        <span class="lang-en">Kongju National University, Gongju, South Korea</span>
+        <span class="lang-ko">공주대학교, 충청남도 공주시</span>
+      </p>
+
+      <div class="hero-bio">
+        <p class="lang-en">
+          I study how large-scale atmospheric circulation — particularly quasi-stationary Rossby
+          waves — organizes summer extreme events such as heatwaves and marine heatwaves.
+          Combining reanalysis diagnostics, energetics frameworks and numerical model experiments,
+          I trace the dynamical pathways that connect remote forcing to local extremes across
+          East Asia and the mid-latitudes.
+        </p>
+        <p class="lang-ko">
+          대규모 대기 순환, 특히 준정상 로스비파가 폭염과 해양열파 같은 여름철 극한현상을
+          어떻게 조직하는지를 연구합니다. 재분석 자료 진단, 에너지 순환 해석, 수치모델 실험을
+          함께 사용해 원격 강제력이 동아시아와 중위도의 국지적 극한현상으로 이어지는
+          역학적 경로를 추적합니다.
+        </p>
+      </div>
+
+      <!-- 프로필 링크. 항목을 추가하려면 <a class="pill"> 블록을 복사하고,
+           빼려면 해당 <a>...</a> 를 통째로 지우면 됩니다. -->
+      <div class="link-row">
+        <a class="pill is-primary" href="mailto:noel.modny@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+          Email
+        </a>
+        <a class="pill" href="cv/CV_Noh.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+          CV (PDF)
+        </a>
+        <a class="pill" href="https://scholar.google.com/citations?user=WfQKq7wAAAAJ" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 9 12 4 2 9l10 5 10-5Z"/><path d="M6 11.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-5.5"/></svg>
+          Google Scholar
+        </a>
+        <a class="pill" href="https://orcid.org/0000-0001-5550-7747" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 8v8M8 5.5v.01M12 10h2a3 3 0 0 1 0 6h-2v-6Z"/></svg>
+          ORCID
+        </a>
+        <a class="pill" href="https://github.com/noel-dyn" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3-.3 6.2-1.5 6.2-6.7A5.2 5.2 0 0 0 20 4.8a4.9 4.9 0 0 0-.1-3.6s-1.1-.3-3.6 1.4a12.3 12.3 0 0 0-6.6 0C7.2.9 6.1 1.2 6.1 1.2A4.9 4.9 0 0 0 6 4.8a5.2 5.2 0 0 0-1.4 3.6c0 5.2 3.2 6.4 6.2 6.7a3.4 3.4 0 0 0-.9 2.6V22"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     RESEARCH
+     ====================================================================== -->
+<section class="section section-alt" id="research">
+  <div class="wrap">
+
+    <div class="section-head">
+      <h2 class="section-title">
+        <span class="lang-en">Research</span><span class="lang-ko">연구</span>
+      </h2>
+      <p class="section-sub">
+        <span class="lang-en">Dynamics of summer extremes, from the wave guide to the surface.</span>
+        <span class="lang-ko">파동 도관(wave guide)에서 지표면까지, 여름철 극한현상의 역학.</span>
+      </p>
+    </div>
+
+    <!-- 연구 키워드 -->
+    <div class="chips" style="margin-bottom:28px">
+      <span class="chip">Rossby Wave Dynamics</span>
+      <span class="chip">Heatwaves</span>
+      <span class="chip">Marine Heatwaves</span>
+      <span class="chip">Pacific&ndash;Japan Pattern</span>
+      <span class="chip">Arctic&ndash;Midlatitude Linkage</span>
+      <span class="chip">Atmospheric Energetics</span>
+      <span class="chip">East Asian Summer Monsoon</span>
+      <span class="chip">Climate Dynamics</span>
+    </div>
+
+    <!-- ┌─────────────────────────────────────────────────────────────┐
+         │  연구 그림                                                   │
+         │  images/research-1~4.jpg — 원본 PNG를 웹용으로 축소한 것.      │
+         │  원본은 images/originals/ 에 그대로 보관되어 있습니다.         │
+         │  그림을 바꾸려면 같은 이름의 jpg 로 덮어쓰면 됩니다.            │
+         └─────────────────────────────────────────────────────────────┘ -->
+    <div class="research-grid">
+
+      <article class="rcard">
+        <div class="rcard-figure">
+          <img src="images/research-1.jpg" alt="850 hPa geopotential height, vorticity and wave activity flux over East Asia" loading="lazy">
+        </div>
+        <div class="rcard-body">
+          <span class="rcard-no">01</span>
+          <h3>
+            <span class="lang-en">Rossby Waves &amp; East Asian Heatwaves</span>
+            <span class="lang-ko">로스비파와 동아시아 폭염</span>
+          </h3>
+          <p class="lang-en">
+            The Pacific&ndash;Japan pattern carries tropical convective energy poleward as a
+            quasi-stationary Rossby wave train. I quantify how this wave guide sets the timing,
+            intensity and persistence of extreme heat over Korea and Japan &mdash; and how the
+            meridional wave component has been changing.
+          </p>
+          <p class="lang-ko">
+            태평양&ndash;일본(PJ) 패턴은 열대 대류 에너지를 준정상 로스비파 형태로 고위도까지
+            전달합니다. 이 파동 경로가 한국과 일본의 극한 고온의 발생 시점·강도·지속성을
+            어떻게 결정하는지, 그리고 남북 방향 파동 성분이 어떻게 변해왔는지를 정량화합니다.
+          </p>
+          <p class="rcard-tags">GRL 2021 · GMD 2026 (Under review)</p>
+        </div>
+      </article>
+
+      <article class="rcard">
+        <div class="rcard-figure">
+          <img src="images/research-2.jpg" alt="Geopotential height and sea surface temperature anomalies over the Northwestern Pacific" loading="lazy">
+        </div>
+        <div class="rcard-body">
+          <span class="rcard-no">02</span>
+          <h3>
+            <span class="lang-en">Atmospheric Pathway of Marine Heatwaves</span>
+            <span class="lang-ko">해양열파의 대기 경로</span>
+          </h3>
+          <p class="lang-en">
+            Marine heatwaves over the Northwestern Pacific are frequently initiated from above.
+            Using reanalysis and nudged model experiments, I trace the chain from anomalous
+            anticyclones to enhanced surface heat flux and suppressed mixing that turns a
+            circulation anomaly into a persistent ocean warm extreme.
+          </p>
+          <p class="lang-ko">
+            북서태평양의 해양열파는 대기에서 촉발되는 경우가 많습니다. 재분석 자료와 너징
+            모델 실험으로, 이상 고기압 &rarr; 지표 열속 증가 &rarr; 혼합 억제로 이어지는 사슬이
+            순환 이상을 지속적인 해양 고온 극한으로 바꾸는 과정을 추적합니다.
+          </p>
+          <p class="rcard-tags">Scientific Reports 2023</p>
+        </div>
+      </article>
+
+      <article class="rcard">
+        <div class="rcard-figure">
+          <img src="images/research-3.jpg" alt="T850 and Z500 trends over the Arctic and Northern Hemisphere, 2010-2024" loading="lazy">
+        </div>
+        <div class="rcard-body">
+          <span class="rcard-no">03</span>
+          <h3>
+            <span class="lang-en">Arctic Change &amp; Mid-latitude Extremes</span>
+            <span class="lang-ko">북극 변화와 중위도 극한현상</span>
+          </h3>
+          <p class="lang-en">
+            Recent summer Arctic warming reshapes the mid-latitude waveguide. I examine how these
+            changes aggravate European heatwaves, and what an increasingly weakened meridional
+            gradient implies for the future of mid-latitude circulation.
+          </p>
+          <p class="lang-ko">
+            최근의 여름철 북극 온난화는 중위도 파동 도관의 구조를 바꾸고 있습니다. 이러한 변화가
+            유럽 폭염을 어떻게 심화시키는지, 그리고 약화되는 남북 온도 경도가 미래 중위도 순환에
+            무엇을 의미하는지를 살펴봅니다.
+          </p>
+          <p class="rcard-tags">Nature Communications 2026 (Under review)</p>
+        </div>
+      </article>
+
+      <article class="rcard">
+        <div class="rcard-figure">
+          <img src="images/research-4.jpg" alt="Climatology of mean and eddy available potential energy, 1979-2024" loading="lazy">
+        </div>
+        <div class="rcard-body">
+          <span class="rcard-no">04</span>
+          <h3>
+            <span class="lang-en">Atmospheric Energetics under Warming</span>
+            <span class="lang-ko">온난화 하의 대기 에너지 순환</span>
+          </h3>
+          <p class="lang-en">
+            Using the loacl energy cycle to ask how global warming alters the generation,
+            conversion and dissipation of available potential and kinetic energy &mdash; and what
+            that means for the variability of the general circulation.
+          </p>
+          <p class="lang-ko">
+            지역적인 에너지 순환을 이용하여, 지구온난화가 유효위치에너지와
+            운동에너지의 생성·변환·소산을 어떻게 바꾸는지, 또 그것이 대기 대순환의 변동성에
+            어떤 의미를 갖는지를 묻습니다.
+          </p>
+          <p class="rcard-tags">Recent Research Topic</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     PUBLICATIONS
+     ====================================================================== -->
+<section class="section" id="publications">
+  <div class="wrap">
+
+    <div class="section-head">
+      <h2 class="section-title">
+        <span class="lang-en">Publications</span><span class="lang-ko">논문</span>
+      </h2>
+      <p class="section-sub">
+        <span class="lang-en">Bold indicates my own name.</span>
+        <span class="lang-ko">굵은 글씨는 본인 이름입니다.</span>
+      </p>
+    </div>
+
+    <!-- ── Peer-reviewed ─────────────────────────────────────────────── -->
+    <div class="pub-group">
+      <h3 class="pub-group-title">
+        <span class="lang-en">Peer-reviewed Journal Articles</span>
+        <span class="lang-ko">동료심사 학술지 논문</span>
+      </h3>
+
+      <ol class="pub-list">
+
+        <li class="pub">
+          <span class="pub-num">5</span>
+          <div>
+            <div class="pub-title">Atmospheric pathway of marine heatwaves over the Northwestern Pacific</div>
+            <div class="pub-authors"><span class="me">Noh, E.</span>, Kim, J., Jun, S. Y., Pak, G., Kim, J. H., &amp; Kim, H. G.</div>
+            <div class="pub-meta"><em>Scientific Reports</em>, 13(1), 22821 &middot; 2023 &middot;
+              <a class="doi-link" href="https://doi.org/10.1038/s41598-023-49833-4" target="_blank" rel="noopener">doi:10.1038/s41598-023-49833-4</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="pub">
+          <span class="pub-num">4</span>
+          <div>
+            <div class="pub-title">Contribution assessment of Northern Hemispheric atmospheric circulations to Korean mid-summer surface warming by the atmospheric nudging experiment</div>
+            <div class="pub-authors">Lee, H. M., <span class="me">Noh, E.</span>, Kim, J. H., Kim, J., &amp; Jun, S. Y.</div>
+            <div class="pub-meta"><em>Asia-Pacific Journal of Atmospheric Sciences</em>, 60(2), 119&ndash;130 &middot; 2024 &middot;
+              <a class="doi-link" href="https://doi.org/10.1007/s13143-023-00339-z" target="_blank" rel="noopener">doi:10.1007/s13143-023-00339-z</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="pub">
+          <span class="pub-num">3</span>
+          <div>
+            <div class="pub-title">The role of the Pacific&ndash;Japan pattern in extreme heatwaves over Korea and Japan</div>
+            <div class="pub-authors"><span class="me">Noh, E.</span>, Kim, J., Jun, S. Y., Cha, D. H., Park, M. S., Kim, J. H., &amp; Kim, H. G.</div>
+            <div class="pub-meta"><em>Geophysical Research Letters</em>, 48(18), e2021GL093990 &middot; 2021 &middot;
+              <a class="doi-link" href="https://doi.org/10.1029/2021GL093990" target="_blank" rel="noopener">doi:10.1029/2021GL093990</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="pub">
+          <span class="pub-num">2</span>
+          <div>
+            <div class="pub-title">Impact of North Atlantic&ndash;East Asian teleconnections on extremely high January PM10 cases in Korea</div>
+            <div class="pub-authors">Kim, J.-H., Kim, S.-J., Youn, D., Kim, M.-K., Kim, J.-H., Kim, J., &amp; <span class="me">Noh, E.</span></div>
+            <div class="pub-meta"><em>Environmental Pollution</em>, 290, 118051 &middot; 2021 &middot;
+              <a class="doi-link" href="https://doi.org/10.1016/j.envpol.2021.118051" target="_blank" rel="noopener">doi:10.1016/j.envpol.2021.118051</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="pub">
+          <span class="pub-num">1</span>
+          <div>
+            <div class="pub-title">The relationship between the Arctic Oscillation and heatwaves on the Korean Peninsula
+              <span class="tag">Korean</span></div>
+            <div class="pub-authors">Kim, J.-H., <span class="me">Noh, E.</span>, &amp; Kim, M.-K.</div>
+            <div class="pub-meta"><em>The Korean Journal of Quaternary Research</em>, 33(1&ndash;2), 25&ndash;35 &middot; 2021</div>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+
+    <!-- ── Under review / In preparation ─────────────────────────────── -->
+    <div class="pub-group">
+      <h3 class="pub-group-title">
+        <span class="lang-en">Under Review &amp; In Preparation</span>
+        <span class="lang-ko">심사 중 &middot; 준비 중</span>
+      </h3>
+
+      <ol class="pub-list">
+
+        <li class="pub">
+          <span class="pub-num">&bull;</span>
+          <div>
+            <div class="pub-title">European heatwave aggravated by recent summer Arctic changes
+              <span class="tag tag-review">Under review</span></div>
+            <div class="pub-authors"><span class="me">Noh, E.</span>, et al.</div>
+            <div class="pub-meta"><em>Nature Communications</em> &middot; 2026</div>
+          </div>
+        </li>
+
+        <li class="pub">
+          <span class="pub-num">&bull;</span>
+          <div>
+            <div class="pub-title">A process-based evaluation metric for the Pacific&ndash;Japan pattern (PJEM) and its influence on Asian summer extremes
+              <span class="tag tag-review">Under review</span></div>
+            <div class="pub-authors"><span class="me">Noh, E.</span>, Jun, S. Y., Yeh, S. W., Kosaka, Y., &amp; Kim, J.</div>
+            <div class="pub-meta">2026</div>
+          </div>
+        </li>
+
+        <li class="pub">
+          <span class="pub-num">&bull;</span>
+          <div>
+            <div class="pub-title">Precipitation enhancing processes by the Pacific&ndash;Japan pattern in the East Asian summer monsoon
+              <span class="tag tag-prep">In preparation</span></div>
+            <div class="pub-authors"><span class="me">Noh, E.</span>, Woo, S. S., Kosaka, Y., &amp; Kim, J.</div>
+            <div class="pub-meta">2026</div>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+
+  </div>
+</section>
+
+<!-- ======================================================================
+     CONFERENCE PRESENTATIONS
+     ====================================================================== -->
+<section class="section section-alt" id="talks">
+  <div class="wrap">
+
+    <div class="section-head">
+      <h2 class="section-title">
+        <span class="lang-en">Conference Presentations</span><span class="lang-ko">학회 발표</span>
+      </h2>
+      <p class="section-sub">
+        <span class="lang-en">Presenting author on all items below.</span>
+        <span class="lang-ko">아래 발표는 모두 발표자(presenting author)로 참여한 것입니다.</span>
+      </p>
+    </div>
+
+    <div class="pub-group">
+      <h3 class="pub-group-title">
+        <span class="lang-en">Oral</span><span class="lang-ko">구두 발표</span>
+      </h3>
+      <ul class="talk-list">
+        <li class="talk">
+          <span class="talk-year">2026</span>
+          <div>
+            <div class="talk-title">European heatwave exacerbated by recent Arctic changes</div>
+            <div class="talk-venue">EGU General Assembly &middot; Vienna</div>
+          </div>
+        </li>
+        <li class="talk">
+          <span class="talk-year">2025</span>
+          <div>
+            <div class="talk-title">Emerging changes in boreal summer Rossby waves</div>
+            <div class="talk-venue">IAMAS&ndash;IACS&ndash;IAPSO (BACO) Joint Assembly &middot; Busan</div>
+          </div>
+        </li>
+        <li class="talk">
+          <span class="talk-year">2024</span>
+          <div>
+            <div class="talk-title">The role of the meridional Rossby wave for extreme heatwaves over East Asia</div>
+            <div class="talk-venue">EGU General Assembly &middot; Vienna</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="pub-group">
+      <h3 class="pub-group-title">
+        <span class="lang-en">Poster</span><span class="lang-ko">포스터 발표</span>
+      </h3>
+      <ul class="talk-list">
+        <li class="talk">
+          <span class="talk-year">2025</span>
+          <div>
+            <div class="talk-title">Summer Arctic warming and potential implications for European heatwaves</div>
+            <div class="talk-venue">AGU Fall Meeting</div>
+          </div>
+        </li>
+        <li class="talk">
+          <span class="talk-year">2025</span>
+          <div>
+            <div class="talk-title">Revisiting the Lorenz energy cycle: impacts of global warming on the atmospheric energy cycle</div>
+            <div class="talk-venue">EGU General Assembly &middot; Vienna</div>
+          </div>
+        </li>
+        <li class="talk">
+          <span class="talk-year">2023</span>
+          <div>
+            <div class="talk-title">Atmospheric pathway of marine heatwaves over the Northwestern Pacific</div>
+            <div class="talk-venue">AGU Fall Meeting</div>
+          </div>
+        </li>
+        <li class="talk">
+          <span class="talk-year">2023</span>
+          <div>
+            <div class="talk-title">East Asian heatwaves driven by meridional Rossby waves</div>
+            <div class="talk-venue">28th IUGG General Assembly &middot; Berlin</div>
+          </div>
+        </li>
+        <li class="talk">
+          <span class="talk-year">2022</span>
+          <div>
+            <div class="talk-title">The role of the Pacific&ndash;Japan pattern in extreme heatwaves over East Asia</div>
+            <div class="talk-venue">23rd Conference on Atmospheric and Oceanic Fluid Dynamics (AOFD)</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ======================================================================
+     CV: EDUCATION / EXPERIENCE / TEACHING / AWARDS
+     ====================================================================== -->
+<section class="section" id="cv">
+  <div class="wrap">
+
+    <div class="section-head">
+      <h2 class="section-title">
+        <span class="lang-en">Education &amp; Experience</span><span class="lang-ko">학력 및 경력</span>
+      </h2>
+      <p class="section-sub">
+        <span class="lang-en">Full CV available as <a href="cv/CV_Noh.pdf" target="_blank" rel="noopener">PDF</a>.</span>
+        <span class="lang-ko">전체 이력은 <a href="cv/CV_Noh.pdf" target="_blank" rel="noopener">PDF</a>에서 확인하실 수 있습니다.</span>
+      </p>
+    </div>
+
+    <div class="two-col" style="gap:36px">
+
+      <!-- 학력 -->
+      <div>
+        <h3 class="mini-title">
+          <span class="lang-en">Education</span><span class="lang-ko">학력</span>
+        </h3>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-date">Feb 2026</div>
+            <div class="tl-title">Ph.D., Atmospheric Science</div>
+            <div class="tl-org">
+              <span class="lang-en">Kongju National University</span>
+              <span class="lang-ko">공주대학교</span>
+            </div>
+            <div class="tl-note">
+              <span class="lang-en"><em>Thesis</em>: Dynamical changes in mid-latitude circulation and associated increase in heatwaves</span>
+              <span class="lang-ko"><em>학위논문</em>: 중위도 순환의 역학적 변화와 그에 따른 폭염 증가</span>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-date">Aug 2020</div>
+            <div class="tl-title">M.S., Atmospheric Science</div>
+            <div class="tl-org">
+              <span class="lang-en">Kongju National University</span>
+              <span class="lang-ko">공주대학교</span>
+            </div>
+            <div class="tl-note">
+              <span class="lang-en"><em>Thesis</em>: Dynamical mechanism involved in the development of the western Pacific pattern</span>
+              <span class="lang-ko"><em>학위논문</em>: 서태평양 패턴 발달에 관여하는 역학적 메커니즘</span>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-date">Aug 2018</div>
+            <div class="tl-title">B.S., Atmospheric Science</div>
+            <div class="tl-org">
+              <span class="lang-en">Kyungpook National University</span>
+              <span class="lang-ko">경북대학교</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 연구 경력 -->
+      <div>
+        <h3 class="mini-title">
+          <span class="lang-en">Research Experience</span><span class="lang-ko">연구 경력</span>
+        </h3>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-date">Mar 2026 &ndash; present</div>
+            <div class="tl-title">
+              <span class="lang-en">Postdoctoral Researcher</span>
+              <span class="lang-ko">박사후연구원</span>
+            </div>
+            <div class="tl-org">
+              <span class="lang-en">Kongju National University &middot; Prof. Joowan Kim</span>
+              <span class="lang-ko">공주대학교 &middot; 김주완 교수 연구실</span>
+            </div>
+            <div class="tl-note">
+              <span class="lang-en">Rossby waves in summer extreme weather; variability of atmospheric energetics</span>
+              <span class="lang-ko">여름철 극한기상에서의 로스비파 역할, 대기 에너지 순환의 변동성</span>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-date">Apr 2023 &ndash; Apr 2024</div>
+            <div class="tl-title">
+              <span class="lang-en">Research Associate</span>
+              <span class="lang-ko">위촉연구원</span>
+            </div>
+            <div class="tl-org">
+              <span class="lang-en">Korea Polar Research Institute &middot; Dr. Sang-Yoon Jun</span>
+              <span class="lang-ko">극지연구소 대기연구본부 &middot; 전상윤 박사</span>
+            </div>
+            <div class="tl-note">
+              <span class="lang-en">Numerical simulation of quasi-stationary Rossby waves in the North Pacific; predicting East Asian marine heatwaves</span>
+              <span class="lang-ko">북태평양 준정상 로스비파 수치 모의, 동아시아 해양열파 예측</span>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-date">Aug 2018 &ndash; Feb 2026</div>
+            <div class="tl-title">
+              <span class="lang-en">Research Assistant</span>
+              <span class="lang-ko">연구조교</span>
+            </div>
+            <div class="tl-org">
+              <span class="lang-en">Kongju National University &middot; Prof. Joowan Kim</span>
+              <span class="lang-ko">공주대학교 &middot; 김주완 교수 연구실</span>
+            </div>
+            <div class="tl-note">
+              <span class="lang-en">The role of Rossby waves in summer extreme weather</span>
+              <span class="lang-ko">여름철 극한기상에서 로스비파의 역할</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Teaching & Awards -->
+    <div class="two-col" style="margin-top:40px">
+      <div>
+        <h3 class="mini-title">
+          <span class="lang-en">Teaching</span><span class="lang-ko">강의 경력</span>
+        </h3>
+        <ul class="plain-list">
+          <li>
+            <div class="li-main">
+              <span class="lang-en">Teaching Assistant &mdash; Fundamentals of Programming</span>
+              <span class="lang-ko">조교 &mdash; 프로그래밍의 기초</span>
+            </div>
+            <div class="li-sub">
+              <span class="lang-en">Kongju National University &middot; Fall 2023</span>
+              <span class="lang-ko">공주대학교 &middot; 2023년 2학기</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="mini-title">
+          <span class="lang-en">Honors &amp; Awards</span><span class="lang-ko">수상</span>
+        </h3>
+        <ul class="plain-list">
+          <li>
+            <div class="li-main">
+              <span class="lang-en">Best Poster Presentation</span>
+              <span class="lang-ko">우수 포스터 발표상</span>
+            </div>
+            <div class="li-sub">
+              <span class="lang-en">Korean Meteorological Society, Fall Conference &middot; 2019</span>
+              <span class="lang-ko">한국기상학회 가을학술대회 &middot; 2019</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ======================================================================
+     CONTACT
+     ====================================================================== -->
+<section class="section section-alt" id="contact">
+  <div class="wrap">
+
+    <div class="section-head">
+      <h2 class="section-title">
+        <span class="lang-en">Contact</span><span class="lang-ko">연락처</span>
+      </h2>
+      <p class="section-sub">
+        <span class="lang-en">Always glad to talk about wave dynamics, extremes, or collaboration.</span>
+        <span class="lang-ko">파동 역학, 극한현상, 공동연구에 대한 이야기는 언제든 환영합니다.</span>
+      </p>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-item">
+        <div class="ci-label">Email</div>
+        <div class="ci-value"><a href="mailto:noel.modny@gmail.com">noel.modny@gmail.com</a></div>
+      </div>
+      <div class="contact-item">
+        <div class="ci-label">
+          <span class="lang-en">Office</span><span class="lang-ko">사무실</span>
+        </div>
+        <div class="ci-value">
+          <span class="lang-en">Dept. of Atmospheric Science, Kongju National University<br>
+            56 Gongjudaehak-ro, Gongju, Chungnam 32588, South Korea</span>
+          <span class="lang-ko">충청남도 공주시 공주대학로 56<br>공주대학교 대기과학과 (우편번호 32588)</span>
+        </div>
+      </div>
+      <!-- 전화번호는 공개 웹사이트라 기본적으로 빼두었습니다. 넣으시려면 주석을 푸세요.
+      <div class="contact-item">
+        <div class="ci-label"><span class="lang-en">Phone</span><span class="lang-ko">전화</span></div>
+        <div class="ci-value">+82-10-4775-3449</div>
+      </div>
+      -->
+      <div class="contact-item">
+        <div class="ci-label">CV</div>
+        <div class="ci-value"><a href="cv/CV_Noh.pdf" target="_blank" rel="noopener">CV_Noh.pdf</a></div>
+      </div>
+      <div class="contact-item">
+        <div class="ci-label">
+          <span class="lang-en">Profiles</span><span class="lang-ko">학술 프로필</span>
+        </div>
+        <div class="ci-value">
+          <a href="https://scholar.google.com/citations?user=WfQKq7wAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+          &middot;
+          <a href="https://orcid.org/0000-0001-5550-7747" target="_blank" rel="noopener">ORCID</a>
+          &middot;
+          <a href="https://github.com/noel-dyn" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ======================================================================
+     FOOTER
+     ====================================================================== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; <span id="year">2026</span> El Noh</span>
+    <span>
+      <span class="lang-en">Built with plain HTML &amp; CSS &middot; Hosted on GitHub Pages</span>
+      <span class="lang-ko">순수 HTML &middot; CSS로 제작 &middot; GitHub Pages 호스팅</span>
+    </span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
